@@ -1,135 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <title>Form</title>
-</head>
-<body>
-    <header>
-        <h1>Dear users!</h1>
-        <p>Filling in all the fields in the table is NOT strictly required. However, the more you answer the following questions, the more accurately and correctly the Contractor will be able to estimate the time and cost of work, and this will also help to avoid further misunderstanding between you and the Contractor.</p>
-    </header>
-    <section>
-        <form action="/signup" method="POST">
-            <div class="table">
-                <div class="header">Annex to the contract:</div>
-                <div class="left">
-                    <label>Annex to the contract:</label>
-                </div>
-                <div class="right">
-                    <label>
-                      <input type="checkbox">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <title>Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Dear users!</h1>
+            <p>Filling in all the fields in the table is NOT strictly required. However, the more you answer the following questions, the more accurately and correctly the Contractor will be able to estimate the time and cost of work, and this will also help to avoid further misunderstanding between you and the Contractor.</p>
+        </header>
+        <section>
+            <form action="/signup" method="POST">
+                <div class="table">
+                    <div class="header">Annex to the contract:</div>
+                    <div class="left">
+                        <label>Annex to the contract:</label>
+                    </div>
+                    <div class="right">
+                        <label>
+                            <input type="checkbox">
                       Add this parameter group to the brief
                     </label>
+                    </div>
+                    <div class="left">
+                        <label>Appendix №</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>To the contract №</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label class="p0">From</label>
+                        <label class="p0">-Day:</label>
+                        <label class="p0">-Month:</label>
+                        <label class="p0">-Year:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"><br><input type="text" placeholder="Write your answer"><br><input type="text" placeholder="Write your answer"></div>
                 </div>
-                <div class="left"><label>Appendix №</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>To the contract №</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left">
-                   <label class="p0">From</label>
-                    <label class="p0">-Day:</label>
-                     <label class="p0">-Month:</label>
-                     <label class="p0">-Year:</label>
-                     </div>
-                <div class="right"><input type="text" placeholder="Write your answer"><br><input type="text" placeholder="Write your answer"><br><input type="text" placeholder="Write your answer"></div>
-            </div>
-            <div class="table">
-               <div class="header">Title:</div>
-                <div class="left"><label>Title 1:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Title 2:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-            </div>
-            <div class="table">
-               <div class="header">Contact Information:</div>
-                <div class="left"><label>Name of the organization:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Name of contact person:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Specialty / position of contact person:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>E-mail:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Phone:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>City:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Address:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Requisites:</label></div>
-                <div class="right"><textarea placeholder="Write your answer"></textarea></div>
-                <div id="inputi"></div>
-                <div class="input_btn"><input class="btn" type="button" onclick="add_input();" value="Add row"></div>
-            </div>
-            <div class="table">
-               <div class="header">General information:</div>
-                <div class="left"><label>Branch, field of activity of the organization:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Name of the project:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Desired project timeline:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Estimated Budget:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Do you plan to make a prepayment?<br>
-If so, what is the sum in %?</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Specify a convenient payment option:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div id="inputi2"></div>
-                <div class="input_btn"><input class="btn" type="button" onclick="add_input2();" value="Add row"></div>
-            </div>
-            
-            <div class="table">
-               <div class="header">Additional general information:</div>
-                <div class="left"><label>Services / Products:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Main competitors:<br>
-Names, website addresses</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Strengths and weaknesses of competitors:<br>
-Prices, quality, promotion, service</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Estimated site name:<br>
-Short name, prospective, or existing domain name</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>The purpose of the site:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>The main objectives of the site:<br>
-The site should ensure the implementation of the following tasks:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Site Image:<br>
-Describe the main idea that your site should convey, the expected impressions and reaction of visitors as a result of visiting it.</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Company website:<br>
-In case of redesign or update</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div id="inputi3"></div>
-                <div class="input_btn"><input class="btn" type="button" onclick="add_input3();" value="Add row"></div>
-            </div>
-            
-             <div class="table">
-               <div class="header">Requirements for the design of the site:</div>
-                <div class="left"><label>General description of the structure:<br>
-Necessary sections</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>What type of site do you need:<br>
+                <div class="table">
+                    <div class="header">Title:</div>
+                    <div class="left">
+                        <label>Title 1:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Title 2:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                </div>
+                <div class="table">
+                    <div class="header">Contact Information:</div>
+                    <div class="left">
+                        <label>Name of the organization:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Name of contact person:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Specialty / position of contact person:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>E-mail:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Phone:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>City:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Address:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Requisites:</label>
+                    </div>
+                    <div class="right">
+                        <textarea placeholder="Write your answer"></textarea>
+                    </div>
+                    <div class="add-row">
+                        <div class="input_btn"><input class="btn" type="button" value="Add row"></div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="header">General information:</div>
+                    <div class="left">
+                        <label>Branch, field of activity of the organization:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Name of the project:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Desired project timeline:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Estimated Budget:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Do you plan to make a prepayment?<br>
+If so, what is the sum in %?</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Specify a convenient payment option:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+
+                    <div class="add-row">
+                        <div class="input_btn"><input class="btn" type="button" value="Add row"></div>
+                    </div>
+                </div>
+
+                <div class="table">
+                    <div class="header">Additional general information:</div>
+                    <div class="left">
+                        <label>Services / Products:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Main competitors:<br>
+Names, website addresses</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Strengths and weaknesses of competitors:<br>
+Prices, quality, promotion, service</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Estimated site name:<br>
+Short name, prospective, or existing domain name</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>The purpose of the site:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>The main objectives of the site:<br>
+The site should ensure the implementation of the following tasks:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Site Image:<br>
+Describe the main idea that your site should convey, the expected impressions and reaction of visitors as a result of visiting it.</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Company website:<br>
+In case of redesign or update</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+
+                    <div class="add-row">
+                        <div class="input_btn"><input class="btn" type="button" value="Add row"></div>
+                    </div>
+                </div>
+
+                <div class="table">
+                    <div class="header">Requirements for the design of the site:</div>
+                    <div class="left">
+                        <label>General description of the structure:<br>
+Necessary sections</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>What type of site do you need:<br>
 1) Promo site - company brand promotion<br>
 Thematic site - newspaper, magazine, online community<br>
 2) Information / news portal - company information, product catalog, price lists, reference information<br>
 3) Company website / corporate website - solving problems of interactive information exchange with contractors, internal and external document flow, working with dealers, remote units, privileged customers through a closed site subsystem, ordering products / services<br>
 4) Electronic store - making sales through the site (describe the business model, which payment methods exist in the company, product / service delivery)<br>
 5) The website of an individual
-Other (specify)</label></div>
-                <div class="right"><textarea placeholder="Write your answer"></textarea></div>
-                <div class="left"><label>List the contents, all the information blocks that you want to see on the main page</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>List the modules that will be used on the site:<br>
+Other (specify)</label>
+                    </div>
+                    <div class="right">
+                        <textarea placeholder="Write your answer"></textarea>
+                    </div>
+                    <div class="left">
+                        <label>List the contents, all the information blocks that you want to see on the main page</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>List the modules that will be used on the site:<br>
 For example:<br>
 -Information page<br>
 -New tape<br>
@@ -138,18 +206,30 @@ For example:<br>
 -File archive<br>
 -Product Catalog<br>
 -Registration of users
--Search</label></div>
-                <div class="right"><textarea placeholder="Write your answer"></textarea></div>
-                <div class="left"><label>What language versions of the site are needed? Is content translation required?</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Approximate number of site pages, product names, services</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Filling content:<br>
-Is content development necessary or are the photos and text materials necessary for the site available?</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Do you plan to fill in the content yourself or would you like our specialists to process and fill the content:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>What functionalities should be present on the site:<br>
+-Search</label>
+                    </div>
+                    <div class="right">
+                        <textarea placeholder="Write your answer"></textarea>
+                    </div>
+                    <div class="left">
+                        <label>What language versions of the site are needed? Is content translation required?</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Approximate number of site pages, product names, services</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Filling content:<br>
+Is content development necessary or are the photos and text materials necessary for the site available?</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Do you plan to fill in the content yourself or would you like our specialists to process and fill the content:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>What functionalities should be present on the site:<br>
 1) Site Search<br>
 2) Publication of announcements and news<br>
 3) Publication of articles<br>
@@ -171,9 +251,13 @@ Is content development necessary or are the photos and text materials necessary 
 19) Electronic catalog of products / services with an interactive order<br>
 20) Flash - telephony<br>
 21) Electronic store<br>
-Other required functionalities (describe which)</label></div>
-                <div class="right"><textarea placeholder="Write your answer"></textarea></div>
-                <div class="left"><label>Design and development of the site:<br>
+Other required functionalities (describe which)</label>
+                    </div>
+                    <div class="right">
+                        <textarea placeholder="Write your answer"></textarea>
+                    </div>
+                    <div class="left">
+                        <label>Design and development of the site:<br>
 1) Development of a logo and corporate identity<br>
 2) Development of creative website ideas, promotional materials<br>
 3) Interface development<br>
@@ -181,93 +265,100 @@ Other required functionalities (describe which)</label></div>
 5) Development of internal content<br>
 6) Photography<br>
 7) Processing and correction of photo / video<br>
-Other necessary work (describe which)</label></div>
-                <div class="right"><textarea placeholder="Write your answer"></textarea></div>
-                <div class="left"><label>Site layout<br>
+Other necessary work (describe which)</label>
+                    </div>
+                    <div class="right">
+                        <textarea placeholder="Write your answer"></textarea>
+                    </div>
+                    <div class="left">
+                        <label>Site layout<br>
 1) Rubber<br>
 2) Static<br>
-3) At the discretion of the developer</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div id="inputi4"></div>
-                <div class="input_btn"><input class="btn" type="button" onclick="add_input4();" value="Add row"></div>
-            </div>
-            
-             <div class="table">
-               <div class="header">Additional Information:
+3) At the discretion of the developer</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+
+                    <div class="add-row">
+                        <div class="input_btn"><input class="btn" type="button" value="Add row"></div>
+                    </div>
+                </div>
+
+                <div class="table">
+                    <div class="header">Additional Information:
 (list all the additional information you consider
 important to pay attention to the implementation of the project)</div>
-                <div class="header"><textarea placeholder="Write your answer"></textarea></div>
-            </div>
-            
-             <div class="table">
-               <div class="header">Date and Signature:</div>
-                <div class="left"><label>Date:</label></div>
-                <div class="right"><label>
-                      <input type="checkbox">
+                    <div class="header">
+                        <textarea placeholder="Write your answer"></textarea>
+                    </div>
+                </div>
+
+                <div class="table">
+                    <div class="header">Date and Signature:</div>
+                    <div class="left">
+                        <label>Date:</label>
+                    </div>
+                    <div class="right">
+                        <label>
+                            <input type="checkbox">
                       Add the fields for the creation date of the brief and the project delivery to the brief
-                    </label></div>
-                <div class="left"><label>Date of completion of the project:</label></div>
-                <div class="right"><input type="text" placeholder="Write your answer"></div>
-                <div class="left"><label>Signature Fields:</label></div>
-                <div class="right"><label>
-                      <input type="checkbox">
+                    </label>
+                    </div>
+                    <div class="left">
+                        <label>Date of completion of the project:</label>
+                    </div>
+                    <div class="right"><input type="text" placeholder="Write your answer"></div>
+                    <div class="left">
+                        <label>Signature Fields:</label>
+                    </div>
+                    <div class="right">
+                        <label>
+                            <input type="checkbox">
                       Add the fields for the creation date of the brief and the project delivery to the brief
-                    </label></div>
-            </div>
-            <p class="submit">
-                <button class="btn">
+                    </label>
+                    </div>
+                </div>
+                <p class="submit">
+                    <button class="btn">
                   Submit
                 </button>
-              </p>
-            
-        </form>
-    </section>
-    <script>
-var p = document.getElementById("inputi") ;
-var p2 = document.getElementById("inputi2") ;
-var p3 = document.getElementById("inputi3") ;
-var p4 = document.getElementById("inputi4") ;        
-function add_input() {
- var new_input = document.createElement("input") ;
- new_input.placeholder = "Write your parameter" ;
- var new_input2 = document.createElement("input") ;
- new_input2.placeholder = "Write your answer" ;
- var div = document.createElement('div') ;
- div.appendChild(new_input) ;
- div.appendChild(new_input2) ;   
- p.appendChild(div) ;
-} ;
-function add_input2() {
- var new_input = document.createElement("input") ;
- new_input.placeholder = "Write your parameter" ;
- var new_input2 = document.createElement("input") ;
- new_input2.placeholder = "Write your answer" ;
- var div = document.createElement('div') ;
- div.appendChild(new_input) ;
- div.appendChild(new_input2) ;   
- p2.appendChild(div) ;
-} ;
-function add_input3() {
- var new_input = document.createElement("input") ;
- new_input.placeholder = "Write your parameter" ;
- var new_input2 = document.createElement("input") ;
- new_input2.placeholder = "Write your answer" ;
- var div = document.createElement('div') ;
- div.appendChild(new_input) ;
- div.appendChild(new_input2) ;   
- p3.appendChild(div) ;
-} ;  
-function add_input4() {
- var new_input = document.createElement("input") ;
- new_input.placeholder = "Write your parameter" ;
- var new_input2 = document.createElement("input") ;
- new_input2.placeholder = "Write your answer" ;
- var div = document.createElement('div') ;
- div.appendChild(new_input) ;
- div.appendChild(new_input2) ;   
- p4.appendChild(div) ;
-} ;        
-</script>
+                </p>
 
-</body>
+            </form>
+        </section>
+        <script>
+            function add_input() {
+                var appender = this.parentElement.parentElement; // взяли парент елемент х2
+                var inputToAppend = ["Write your parameter", {
+                  name: 'some-answer-input',
+                  placeholder: "Write your answer",
+                  class: 'super-wide-input'
+                }]; // Данные унпута могут быть очень прокачаны
+
+                // {
+                //   name: 'some-input-name',
+                //   placeholder: 'some placeholder for my input',
+                //   customClass: 'suepr-wide-input'
+                // }
+
+                inputToAppend.forEach(function (inputData) {
+                    var newInput = document.createElement("input");
+                    if(typeof inputData === 'object') {
+                        for(var inputAttribute in inputData) {
+                          newInput.setAttribute(inputAttribute, inputData[inputAttribute]);
+                        }
+                    } else {
+                        newInput.placeholder = inputData;
+                    }
+                    appender.appendChild(newInput);
+                });
+            };
+
+            var rowCreatorButtons = document.querySelectorAll('.btn'); // Нашли все кнопки - querySelectorAll дает NodeList по нему можна как по арею пройтись
+
+            rowCreatorButtons.forEach(function (btn) { // пробежались по арею NodeList
+                btn.addEventListener('click', add_input);  // Добавили ивент хендлер add_input
+            });
+        </script>
+
+    </body>
 </html>

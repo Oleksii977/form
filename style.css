@@ -1,0 +1,26 @@
+body{font-family: 'Lato', sans-serif;}
+header,section{max-width: 960px; margin:0 auto;}
+.header{width: 100%;text-align: center;background-color: #42B001;color: #fff;border:1px solid #42B001;padding: 10px;}
+.table{display: flex;flex-wrap: wrap;border:1px solid #42B001;margin-bottom: 15px;}
+.left,.right{width:50%;}
+label{padding:10px;display: block;}
+input, textarea{margin:10px;width: 94%;}
+textarea{height: 100px;}
+input[type="checkbox" i]{width: 3%}
+.p0{padding:0px 10px}
+.header textarea {width: 90%; height: 100px;}
+#inputi div{display: flex; flex-wrap: wrap; justify-content: space-around;}
+#inputi2 div{display: flex; flex-wrap: wrap; justify-content: space-around;}
+#inputi3 div{display: flex; flex-wrap: wrap; justify-content: space-around;}
+#inputi4 div{display: flex; flex-wrap: wrap; justify-content: space-around;}
+#inputi {width: 100%;}
+#inputi div input{width: 47.3%;}
+#inputi2 {width: 100%;}
+#inputi2 div input{width: 47.3%;}
+#inputi3 {width: 100%;}
+#inputi3 div input{width: 47.3%;}
+#inputi4 {width: 100%;}
+#inputi4 div input{width: 47.3%;}
+.input_btn{width: 100%; text-align: center;}
+.btn{background-color: #42B001;color: #fff;width: 40%;height: 40px;border-radius: 20px;border: 1px solid #fff;}
+.submit{width: 100%; text-align: center;}
